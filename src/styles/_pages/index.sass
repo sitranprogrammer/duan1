@@ -1,67 +1,87 @@
 /////////////////////////////////
 // Phần Slider
 /////////////////////////////////
-.home-slider
-	.owl-carousel
-		// Phần Slider
-		.item
-			position: relative
-			.title
-				+pad(2rem 0)
-				height: 100%
-				width: 100%
-				display: flex
-				align-items: center
-			+media-breakpoint-up(md)
-				.title
-					+pos(abs, 0 null null 0)
-					color: $whites
-					+text-shadow()
+// 
+/////////////////////////////////
+// Phần News
+/////////////////////////////////
+body
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+	.home-service
+		+Sideptrai(#000,#fff,500px)
+		background: url('../img/home-product.png')
+		background-repeat: no-repeat
+		background-size: cover
+		.box1
+			width: 100%
+			height: 100%
+			box-shadow: 0px 0px 0px 5px #bba16a
+			background: #d8b978
+			line-height: 1.5rem
+			padding: 1.5rem 1rem
+			.abc
+				text-align: left
+				padding-left: 11.5rem
+			h2
+				text-align: left
+				font-size: 45px
+	.home-shop
+		+Sideptrai(#d8b978,#fff,500px)
+		.hihi
+			.Hv
+				width: 100px
+				height: 100px
+				background: #d39e00
+				transform: rotate(45deg)
+				position: relative
+				box-shadow: 0px 0px 0px 5px #fff
+			h3
+				position: absolute
+				top: 0
+				left: 0
+				transform: translate(30%,120%)
+	.home-slider
+		+Sideptrai(#000,#fff,null)
+		text-align: left
+		line-height: 1.2
+		z-index: 
+		figcaption
+			h2
+				color: #d8b978
+			p
+				line-height: 1.2
+			.btn
+				color: #fff
+				background: #d8b978
+				padding: 1rem 
+				margin-bottom: 1rem
+		+media-breakpoint-up(md)
+			figure
+				position: relative
+			figcaption
+				position: absolute
+				bottom: 50%
+				right: 5%
+				text-align: center
+				
+			.home-slider
+				+Sideptrai(null,#fff,null)
+				text-align: center
+				line-height: 1.2
+				figure
+					position: relative
+				.desc
+					position: absolute
+					bottom: 0
+					left: 0	
 					h2
-						+fz(3rem)
-					p 
-						+fz(1.5rem)
-						+lh(2rem)
-		// Phần Control
-		.owl-dots
-			margin-bottom: 2rem
-/////////////////////////////////
-// Phần News
-/////////////////////////////////
-
-.home-news
-	.item 
-		figure
-			.blockimg
-				+bor-rad(10px)
-				overflow: hidden
-				img
-					width: 100%
-			figcaption 
-				margin-top: 1rem
-				h3 
-					+fz(1.1rem)
-					margin-bottom: 0
-				time 
-					+fz(.85rem)
-					color: darken($whites,30%)
-				p 
-					margin-top: .5rem
-					color: darken($whites,50%)
-/////////////////////////////////
-// Phần News
-/////////////////////////////////
-
-.home-clients
-	.owl-carousel
-		.item 
-			+pad(.5rem)
-		// Phần Control
-		.owl-nav
-			margin-bottom: 2rem
-			button 
-				i 
-					display: block
-					width: 2rem
-					height: 2rem
-					+lh(2rem)
+						color: #d8b978
+					p
+						line-height: 1.2
+					.btn
+						color: #fff
+						background: #d8b978
+						padding: 1rem 
+						margin-bottom: 1rem
+// day la mobie deo phải pc check ki~
+	

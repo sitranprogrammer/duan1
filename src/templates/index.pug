@@ -8,71 +8,48 @@ block variables
 
 //- Phần khai báo body
 block body
-	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi kh ối
 	section.home-slider
 		.owl-carousel.owl-theme
 			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-			.item
-				img(src="./img/home_slider_1.jpg", alt="")
-				.title
-					.container
-						.row
-							.col-md-7
-								h2 Chúng tôi là FullStack Vietnam
-								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-	section.home-news
+				figure
+					img.img-fluid.w-100(src="./img/home-slider.png", alt="", srcset="")
+				figcaption
+					h2 Tận tâm phục vụ khách hàng
+					p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic nostrum sint mollitia in eos harum officia veritatis dignissimos numquam, odio maxime natus ratione laborum, porro sequi reprehenderit. Illo, ducimus officiis.
+					button.btn.btn-primary Đặt Hàng
+	section.home-service
 		.container
 			.row
-				.col-md-4.item
-					figure
-						.blockimg
-							img(src="./img/home_news_1.jpg", alt="", srcset="")
-						figcaption
-							h3 
-								a(href="#") Chúng tôi là FullStack Vietnam
-							time 22/06/2018
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-				.col-md-4.item
-					figure
-						.blockimg
-							img(src="./img/home_news_2.jpg", alt="", srcset="")
-						figcaption
-							h3 
-								a(href="#") Chúng tôi là FullStack Vietnam
-							time 22/06/2018
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-				.col-md-4.item
-					figure
-						.blockimg
-							img(src="./img/home_news_3.jpg", alt="", srcset="")
-						figcaption
-							h3 
-								a(href="#") Chúng tôi là FullStack Vietnam
-							time 22/06/2018
-							p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
-	section.home-clients.mt-5
+					.box1
+						h2 Chính Thức
+						h2.abc Ra Mắt
+						p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae aliquid nobis ipsa hic dignissimos? Dolorem necessitatibus ipsa illum dolor vitae aut dolorum ipsum fugiat cum quae. Eum velit magni animi.
+	section.home-shop
 		.container
 			.row
-				.col
-					.owl-carousel.owl-theme
-						- for(x=1;x<10;x++)
-							.item
-								if (x < 7)
-									img(src="./img/clients_"+x+".png", alt="")
-								else
-									img(src="./img/clients_"+(x-3)+".png", alt="")
+				.col-md-6
+					.hihi
+						.Hv
+						h3 Nỗi Bật
+				.col-md-6
+					.row
+						.col-md-6
+							figure
+								img.img-fluid.w-100(src="./img/home-shop-1.jpg", alt="", srcset="")
+						.col-md-6
+							figure
+								img.img-fluid.w-100(src="./img/home-shop-1.jpg", alt="", srcset="")
+			.row
+				.col-md-3
+					figure
+						img.img-fluid.w-100(src="./img/home-shop-1.jpg", alt="", srcset="")
+				.col-md-3
+					figure
+						img.img-fluid.w-100(src="./img/home-shop-1.jpg", alt="", srcset="")
+				.col-md-3
+					figure
+						img.img-fluid.w-100(src="./img/home-shop-1.jpg", alt="", srcset="")
+				.col-md-3
+					figure
+						img.img-fluid.w-100(src="./img/home-shop-1.jpg", alt="", srcset="")
